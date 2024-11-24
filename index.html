@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Datos Curiosos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Datos Curiosos del Mundo</h1>
+    <nav>
+      <a href="#home">Inicio</a>
+      <a href="#curiosities">Curiosidades</a>
+      <a href="#social">Redes Sociales</a>
+      <a href="#comments">Comentarios</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Inicio</h2>
+    <p>Bienvenido a un lugar donde descubrirás cosas fascinantes que probablemente no sabías.</p>
+    <img src="imagenes/cerebro.jfif" alt="Imagen de inicio" class="responsive-img">
+    <button onclick="redirect('https://www.youtube.com')">Visítanos en YouTube</button>
+  </section>
+
+  <section id="curiosities">
+    <h2>Curiosidades</h2>
+
+    <article>
+      <h3>¿Sabías que el sol es tan grande que cabrían 1.3 millones de Tierras dentro?</h3>
+      <img src="imagenes/tierra y sol.jfif" alt="Imagen del sol" class="responsive-img">
+      <p>
+        El Sol es una estrella inmensa en el centro del sistema solar. Su diámetro es de aproximadamente 1.4 millones de kilómetros.
+      </p>
+    </article>
+
+    <article>
+      <h3>Las medusas existen desde hace más de 500 millones de años</h3>
+      <img src="imagenes/medusa.jfif" alt="Medusa en el océano" class="responsive-img">
+      <p>
+        Las medusas han sobrevivido a numerosas extinciones masivas y han estado en la Tierra mucho antes de los dinosaurios.
+      </p>
+    </article>
+
+    <article>
+      <h3>¡Los koalas tienen huellas dactilares muy similares a las de los humanos!</h3>
+      <img src="imagenes/huella koala.jfif" alt="Koala" class="responsive-img">
+      <p>
+        Las huellas dactilares de los koalas son tan similares a las humanas que incluso bajo un microscopio es difícil distinguirlas.
+      </p>
+    </article>
+
+    <article>
+      <h3>¡Los tiburones son más antiguos que los árboles!</h3>
+      <img src="imagenes/tiburon.jfif" alt="Tiburón" class="responsive-img">
+      <p>
+        Los tiburones han existido durante más de 400 millones de años, mientras que los árboles surgieron hace unos 350 millones de años.
+      </p>
+    </article>
+
+    <article>
+      <h3>Los plátanos son bayas, pero las fresas no</h3>
+      <img src="imagenes/platanofresa.jfif" alt="Plátano" class="responsive-img">
+      <p>
+        Según la botánica, un plátano es una baya porque cumple con las características, pero una fresa no lo es técnicamente.
+      </p>
+    </article>
+  </section>
+
+  <section id="social">
+    <h2>Redes Sociales</h2>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a>
+      <a href="https://instagram.com" target="_blank">Instagram</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </section>
+
+  <section id="comments">
+    <h2>Comentarios</h2>
+    <form id="commentForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Tu nombre" required>
+      <label for="comment">Comentario:</label>
+      <textarea id="comment" placeholder="Escribe tu comentario" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="commentsSection">
+      <h3>Comentarios enviados</h3>
+      <ul id="commentsList"></ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Datos Curiosos - Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
